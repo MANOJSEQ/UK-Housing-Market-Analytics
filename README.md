@@ -6,6 +6,10 @@ This project analyses UK housing market data using SQL and Power BI to uncover t
 
 The analysis is based on HM Land Registry Price Paid Data and focuses on transforming raw property transaction records into meaningful business insights through data cleaning, SQL analysis, and interactive Power BI dashboards.
 
+## Dataset Size
+
+The 2025 HM Land Registry Price Paid dataset used in this project contains **879,386 property transaction records**.
+
 ## Objectives
 
 - Analyse property price trends across the UK
@@ -16,7 +20,7 @@ The analysis is based on HM Land Registry Price Paid Data and focuses on transfo
 
 ## Tools Used
 
-- SQL
+- PostgreSQL
 - Power BI
 - Microsoft Excel
 - HM Land Registry Price Paid Data
