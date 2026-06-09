@@ -18,6 +18,22 @@ The 2025 HM Land Registry Price Paid dataset used in this project contains **879
 - Evaluate property types and transaction activity
 - Develop an interactive Power BI dashboard for decision making
 
+## Data Cleaning
+
+To improve analytical accuracy, a cleaned residential dataset was created using a PostgreSQL view.
+
+The cleaning process:
+
+- Removed commercial and non residential property transactions
+- Excluded ownership transfers and nominal value transactions
+- Filtered property prices outside the £10,000 to £5,000,000 range
+- Retained only detached, semi detached, terraced and flat properties
+
+Results:
+
+- Original transactions: 879,386
+- Cleaned residential transactions: 839,083
+
 ## Tools Used
 
 - PostgreSQL
