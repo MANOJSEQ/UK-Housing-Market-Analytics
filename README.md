@@ -12,7 +12,7 @@ The analysis uses HM Land Registry Price Paid Data and focuses on transforming r
 
 A property investment company wants to better understand housing market trends across the UK.
 
-The objective is to identify property market patterns, understand transaction activity, compare property types, and prepare the data for further business intelligence reporting and dashboard development.
+The objective is to identify property market patterns, understand transaction activity, compare property types, analyse regional differences, and prepare the data for future business intelligence reporting.
 
 ---
 
@@ -26,7 +26,7 @@ The dataset contains property transactions recorded across England and Wales, in
 - Transaction Date
 - Property Type
 - Postcode
-- Town/City
+- Town or City
 - District
 - County
 - Ownership Type
@@ -77,11 +77,7 @@ Cleaning steps:
 - Removed commercial and non residential transactions
 - Removed ownership transfers and nominal value transactions
 - Filtered prices outside the range £10,000 to £5,000,000
-- Retained only:
-  - Detached
-  - Semi Detached
-  - Terraced
-  - Flats
+- Retained only detached, semi detached, terraced and flat properties
 
 ### Cleaning Results
 
@@ -96,7 +92,7 @@ Cleaning steps:
 ### Property Type Distribution
 
 | Property Type | Transactions |
-|---------------|-------------|
+|---|---:|
 | Terraced | 249,541 |
 | Semi Detached | 244,963 |
 | Detached | 200,678 |
@@ -105,13 +101,17 @@ Cleaning steps:
 
 ### New Build vs Existing Properties
 
-- Existing Properties: 840,445
-- New Build Properties: 38,941
+| Property Status | Transactions |
+|---|---:|
+| Existing Properties | 840,445 |
+| New Build Properties | 38,941 |
 
 ### Ownership Type
 
-- Freehold: 687,137
-- Leasehold: 192,249
+| Ownership Type | Transactions |
+|---|---:|
+| Freehold | 687,137 |
+| Leasehold | 192,249 |
 
 ### Key Observations
 
@@ -119,6 +119,106 @@ Cleaning steps:
 - Existing properties represented the majority of housing transactions.
 - Freehold properties accounted for most residential sales.
 - Significant price outliers were identified and removed before residential analysis.
+
+---
+
+## Regional Analysis
+
+### Most Expensive Counties
+
+| County | Average Price |
+|---|---:|
+| Windsor and Maidenhead | £644,918 |
+| Greater London | £637,160 |
+| Surrey | £603,798 |
+| Buckinghamshire | £557,965 |
+| Hertfordshire | £536,067 |
+
+### Most Affordable Counties
+
+| County | Average Price |
+|---|---:|
+| City of Kingston upon Hull | £142,863 |
+| Blackpool | £143,877 |
+| Blaenau Gwent | £148,803 |
+| Middlesbrough | £153,343 |
+| Hartlepool | £153,619 |
+
+### Key Observations
+
+- The highest property prices were concentrated around London and the South East.
+- Windsor and Maidenhead recorded the highest average county level property price.
+- There is a significant affordability gap between premium southern counties and lower priced northern and Welsh regions.
+
+---
+
+## Property Type Analysis
+
+### Average Price by Property Type
+
+| Property Type | Average Price | Transactions |
+|---|---:|---:|
+| Detached | £504,178 | 200,543 |
+| Semi Detached | £319,783 | 244,913 |
+| Flat | £304,094 | 144,217 |
+| Terraced | £288,200 | 249,410 |
+
+### Property Type Share
+
+| Property Type | Share |
+|---|---:|
+| Terraced | 29.72% |
+| Semi Detached | 29.19% |
+| Detached | 23.90% |
+| Flat | 17.19% |
+
+### Key Observations
+
+- Detached properties recorded the highest average price.
+- Terraced properties were the most frequently sold property type.
+- Detached properties sold for approximately £216,000 more than terraced properties on average.
+
+---
+
+## Market Trends
+
+### Key Observations
+
+- March 2025 recorded the highest average residential property price at £372,063.
+- March 2025 also recorded the highest transaction volume with 137,497 sales.
+- April 2025 recorded the lowest average property price at £313,966.
+- Housing market activity varied significantly across the year.
+
+---
+
+## County and Property Type Analysis
+
+### Key Observations
+
+- Detached houses in Greater London recorded the highest average price at £1,102,853.
+- Detached properties dominated the most expensive county and property type combinations.
+- Greater London flats averaged £511,425, which is higher than detached homes in many other counties.
+- Location and property type both have a major impact on price.
+
+---
+
+## Market Activity Analysis
+
+### Highest Activity Housing Markets
+
+| County | Transactions | Average Price |
+|---|---:|---:|
+| Greater London | 92,505 | £637,160 |
+| Greater Manchester | 39,096 | £266,749 |
+| West Yorkshire | 33,018 | £238,362 |
+| West Midlands | 31,774 | £258,622 |
+| Kent | 23,949 | £397,975 |
+
+### Key Observations
+
+- Greater London recorded the highest housing market activity.
+- Greater Manchester, West Yorkshire and West Midlands had high transaction volumes with much lower average prices than London.
+- High transaction volume does not always mean high property prices.
 
 ---
 
