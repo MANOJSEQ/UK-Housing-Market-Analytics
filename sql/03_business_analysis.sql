@@ -35,3 +35,15 @@ GROUP BY town_city
 HAVING COUNT(*) > 50
 ORDER BY average_price DESC
 LIMIT 15;
+
+-- Lowest priced transactions
+SELECT *
+FROM property_sales
+ORDER BY price ASC
+LIMIT 20;
+
+-- Highest priced transactions
+SELECT *
+FROM property_sales
+ORDER BY price DESC
+LIMIT 20;
