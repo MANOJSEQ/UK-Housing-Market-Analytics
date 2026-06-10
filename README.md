@@ -60,6 +60,7 @@ The dataset contains property transactions recorded across England and Wales, in
 3. Data Cleaning
 4. Exploratory Data Analysis
 5. Business Analysis
+6. Power BI Dashboard Development
 
 ---
 
