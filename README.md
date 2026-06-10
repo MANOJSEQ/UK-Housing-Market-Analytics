@@ -16,6 +16,19 @@ The objective is to identify property market patterns, understand transaction ac
 
 ---
 
+## Business Value
+
+This analysis helps property investors, housing market analysts, and real estate professionals understand:
+
+- Regional housing market performance
+- Property affordability differences
+- Property type profitability
+- Housing market activity trends
+- Potential investment opportunities
+- Market demand across different regions
+
+---
+
 ## Dataset Information
 
 Source: HM Land Registry Price Paid Data
@@ -284,3 +297,23 @@ The final dashboard was developed in Power BI and consists of three interactive 
 - DAX Measures
 - KPI Reporting
 - Business Analysis
+
+---
+
+## Key Insights
+
+- Detached properties recorded the highest average selling price (£504K).
+- Windsor and Maidenhead was the most expensive county with an average house price exceeding £644K.
+- Beaconsfield was the most expensive town with an average property price above £1.1M.
+- Terraced and Semi-Detached properties accounted for nearly 59% of all residential transactions.
+- Total residential property sales exceeded £295 billion across more than 839,000 transactions.
+
+---
+
+## Conclusion
+
+This project demonstrates an end-to-end data analytics workflow using SQL and Power BI.
+
+The analysis transformed raw housing transaction data into actionable business insights through data validation, cleaning, exploratory analysis, and interactive dashboard development.
+
+The project highlights skills in SQL, Power BI, DAX, data visualisation, business analysis, and dashboard reporting that are commonly required for Data Analyst roles.
