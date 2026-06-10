@@ -225,5 +225,62 @@ Cleaning steps:
 ## Tools Used
 
 - PostgreSQL
+- Power BI
+- DAX
 - Microsoft Excel
 - HM Land Registry Price Paid Data
+
+---
+
+## Power BI Dashboard
+
+The final dashboard was developed in Power BI and consists of three interactive pages designed to provide different perspectives on the UK housing market.
+
+### Market Overview
+
+- Total Transactions
+- Average House Price
+- Total Property Value
+- Monthly Average House Price Trend
+
+### Regional Analysis
+
+- Top 15 Most Expensive Counties
+- Top 15 Most Affordable Counties
+- Top 15 Most Expensive Towns
+
+### Property Type Analysis
+
+- Average House Price by Property Type
+- Total Sales Value by Property Type
+- Transaction Share by Property Type
+
+---
+
+## Dashboard Preview
+
+### Market Overview
+
+![Market Overview](images/market_overview.png)
+
+### Regional Analysis
+
+![Regional Analysis](images/regional_analysis.png)
+
+### Property Type Analysis
+
+![Property Type Analysis](images/property_type_analysis.png)
+
+---
+
+## Skills Demonstrated
+
+- SQL Data Cleaning
+- Data Validation
+- Exploratory Data Analysis (EDA)
+- Data Transformation
+- Data Visualization
+- Dashboard Development
+- DAX Measures
+- KPI Reporting
+- Business Analysis
